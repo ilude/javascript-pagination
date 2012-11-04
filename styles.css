@@ -1,0 +1,42 @@
+
+body {
+	font-family:Arial,Helvetica,sans-serif;
+}
+
+.pagination #navigation {
+	clear:both;
+	padding-top:10px;
+	margin:0px 0px 0px 10px;
+}
+
+.pagination span {
+	clear:both;
+	font-size: 10px;
+	margin:0px 0px 0px 10px;
+	padding-top:10px;
+	padding:0.3em 0.5em;
+	
+	color:#00539B;
+	border-color:#999;
+	background: #fff;
+	border: solid 1px #00539B;
+}
+
+.pagination span.clickable {
+	cursor: pointer;
+}
+
+.pagination span.clickable:hover {
+	background: #00539B;
+	color: #fff;
+}
+
+.pagination span.current {
+	background: #00539B;
+	color: #fff;
+}
+
+.pagination span#next, .pagination span#prev{
+	background: #00539B;
+	color: #fff;
+} 

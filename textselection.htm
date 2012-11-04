@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>jQuery Disable Select Text - Example</title>
+    <script type="text/javascript" src="Scripts/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="Scripts/jquery.disable.text.select.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+            $('#btnToggleTextSelect').toggle(function() {
+                $(this).text('enableTextSelect()');
+                $('.disableSelection').disableTextSelect();
+            }, function() {
+                $(this).text('disableTextSelect()');
+                $('.disableSelection').enableTextSelect();
+            });
+        });
+    </script>
+</head>
+<body>
+
+    <p class="disableSelection">try selecting me with your mouse</p>
+    <button id="btnToggleTextSelect">disableTextSelect()</button>
+</body>
+</html>

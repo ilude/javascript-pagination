@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Table Test</title>
+	<script type="text/javascript" src="Scripts/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="Scripts/jquery.paginator.js"></script>
+	<script type="text/javascript" src="Scripts/testdata.js"></script>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<style type="text/css">
+	#template tr.highlight {
+		background-color: #eee;
+	}
+</style>
+
+<body>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#template').paginate(data);
+			$('#template tbody tr').click( function() {
+				alert($(this).attr("id"));
+			});
+			$('#template tbody tr').hover( function() {
+				$(this).addClass("highlight");
+			}, function() {
+				$(this).removeClass("highlight");
+			});
+		});
+   </script> 
+
+	<table id="template">
+		<thead>
+			<tr>
+				<td>#</td>
+				<td>First Name</td>
+				<td>Last Name</td>
+				<td>Education</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr id="${#}">
+				<td>${#}</td>
+				<td>${name}</td>
+				<td>${family}</td>
+				<td>${education}</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

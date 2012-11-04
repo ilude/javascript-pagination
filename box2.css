@@ -1,0 +1,21 @@
+#slideout_content {
+	height: 75px;
+	width: 300px;
+}
+
+#slideout_tab {
+	height: 75px;
+	width: 30px;
+}
+
+.border {
+	border: solid 1px black;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
